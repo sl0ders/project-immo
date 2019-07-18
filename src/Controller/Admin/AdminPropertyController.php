@@ -32,7 +32,6 @@ class AdminPropertyController extends AbstractController
      */
     public function __construct(PropertyRepository $repository, ObjectManager $em)
     {
-
         $this->repository = $repository;
         $this->em = $em;
     }
