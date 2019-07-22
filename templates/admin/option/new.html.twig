@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container mt-4">
+        <h2>Insérer une nouvelle option</h2>
+        {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {{ include ('admin/option/_form.html.twig',{button: 'Ajouté'}) }}
+    </div>
+
+{% endblock %}
+
