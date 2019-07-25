@@ -30,6 +30,7 @@
     </schema>
     <schema id="9" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
+      <Substituted>1</Substituted>
     </schema>
     <schema id="10" parent="1" name="mon_blog">
       <Collation>latin1_swedish_ci</Collation>
@@ -48,8 +49,8 @@
     </schema>
     <schema id="15" parent="1" name="project-immo">
       <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
+      <Visible>1</Visible>
     </schema>
     <schema id="16" parent="1" name="projet_5">
       <Collation>latin1_swedish_ci</Collation>

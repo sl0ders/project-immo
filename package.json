@@ -6,7 +6,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production"
   },
   "repository": {
     "type": "git",
@@ -15,12 +18,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "private": true,
   "bugs": {
     "url": "https://github.com/sl0ders/project-immo/issues"
   },
   "homepage": "https://github.com/sl0ders/project-immo#readme",
   "dependencies": {
+    "@symfony/webpack-encore": "^0.27.0",
+    "query": "^0.2.0",
+    "select2": "^4.0.8",
+    "webpack-notifier": "^1.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  },
   "description": ""
 }
