@@ -27,7 +27,9 @@
     "@symfony/webpack-encore": "^0.27.0",
     "query": "^0.2.0",
     "select2": "^4.0.8",
-    "webpack-notifier": "^1.8.0"
+    "webpack-notifier": "^1.8.0",
+    "@babel/core": "^7.5.5",
+    "core-js": "^3.1.4"
   },
   "devDependencies": {
     "jquery": "^3.4.1"

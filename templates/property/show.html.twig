@@ -15,11 +15,11 @@
             {% endif %}
             <div class="row">
                 <div class="col-md-8">
-                    {% if property.filename %}
-                        <img src="{{ vich_uploader_asset(property, 'imageFile') | imagine_filter('medium') }}"
+                    {% if property.picture %}
+                        <img src="{{ vich_uploader_asset(property.picture, 'imageFile') | imagine_filter('medium') }}"
                              alt="card-img-top" style="width: 100%; height: auto;">
                     {% else %}
-                        <img src="{{ '/images/properties/immo.jpeg'  | imagine_filter('thumb') }}" alt="card-img-top"
+                        <img src="{{ '/media/empty.png'  | imagine_filter('thumb') }}" alt="card-img-top"
                              style="width: 100%; height: auto;">
                     {% endif %}
                 </div>
