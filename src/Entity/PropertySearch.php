@@ -2,6 +2,7 @@
 
 
 namespace App\Entity;
+
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -22,6 +23,26 @@ class PropertySearch
      * @var ArrayCollection
      */
     private $options;
+
+    /**
+     * @var integer|null
+     */
+    private $distance;
+
+    /**
+     * @var float|null
+     */
+    private $lat;
+
+    /**
+     * @var float|null
+     */
+    private $lng;
+
+    /**
+     * @var string|null
+     */
+    private $address;
 
     public function __construct()
     {
@@ -78,6 +99,78 @@ class PropertySearch
     public function setOptions(ArrayCollection $options): void
     {
         $this->options = $options;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getDistance(): ?int
+    {
+        return $this->distance;
+    }
+
+    /**
+     * @param int|null $distance
+     * @return PropertySearch
+     */
+    public function setDistance(?int $distance): PropertySearch
+    {
+        $this->distance = $distance;
+        return $this;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getLat(): ?float
+    {
+        return $this->lat;
+    }
+
+    /**
+     * @param float|null $lat
+     * @return PropertySearch
+     */
+    public function setLat(?float $lat): PropertySearch
+    {
+        $this->lat = $lat;
+        return $this;
+    }
+
+    /**
+     * @return float|null
+     */
+    public function getLng(): ?float
+    {
+        return $this->lng;
+    }
+
+    /**
+     * @param float|null $lng
+     * @return PropertySearch
+     */
+    public function setLng(?float $lng): PropertySearch
+    {
+        $this->lng = $lng;
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getAddress(): ?string
+    {
+        return $this->address;
+    }
+
+    /**
+     * @param string|null $address
+     * @return PropertySearch
+     */
+    public function setAddress(?string $address): PropertySearch
+    {
+        $this->address = $address;
+        return $this;
     }
 
 
